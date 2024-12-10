@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f7; /* Light gray background */
+    color: #1d1d1f; /* Dark text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff; /* White */
+    color: #1d1d1f; /* Dark text */
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.tabs {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #d1d1d6;
+}
+
+.tab {
+    flex: 1;
+    padding: 1em;
+    text-align: center;
+    background-color: #f5f5f7; /* Light gray */
+    border-top: 2px solid #d1d1d6;
+    border-right: 1px solid #d1d1d6;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #1d1d1f; /* Dark text */
+}
+
+.tab:last-child {
+    border-right: none;
+}
+
+.tab:hover {
+    background-color: #ffffff; /* White */
+    transform: translateY(-2px);
+}
+
+.tab.active {
+    background-color: #ffffff; /* White */
+    font-weight: bold;
+    border-bottom: none;
+    transform: translateY(0);
+    color: #007aff; /* Apple blue text for active tab */
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.image {
+    width: 100%;
+    max-width: 400px;
+    margin: 2em 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add some space between images */
+}
+
+.image-container img {
+    width: calc(33.33% - 10px); /* Adjust width to fit within the container */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    color: #6e6e73;
+    background-color: #f5f5f7;
+    border-top: 1px solid #d1d1d6;
+}

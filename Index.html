@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armadillo Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image-container img {
+            width: 30%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Proof of Concept</h1>
+        <p>How To Present Information in a Digital Environment</p>
+    </header>
+
+    <main> 
+        <div class="tabs">
+            <div class="tab active" data-tab="systems-design" onclick="openTab('systems-design')">Systems Design, Engineering, and Organization</div>
+            <div class="tab" data-tab="content-architecture" onclick="openTab('content-architecture')">Content and Information Architecture</div>
+            <div class="tab" data-tab="user-experience" onclick="openTab('user-experience')">User Experience and Visual Design</div>
+            <div class="tab" data-tab="security-ethics" onclick="openTab('security-ethics')">Security and Ethics</div>
+            <div class="tab" data-tab="priorities" onclick="openTab('priorities')">Priorities</div>
+        </div>
+
+        <div id="systems-design" class="tab-content active">
+            <h2>Systems Design, Engineering, and Organization</h2>
+            <div class="image-container">
+                <img src="Pictures/Signifiers.jpg" alt="signifiers" class="image">
+                <img src="Pictures/Constraints.jpg" alt="Constraints" class="image">
+                <img src="Pictures/Hyperlink.jpg" alt="Affordances" class="image">
+            </div>
+            <ul>
+                <li><strong>Visibility/Signifiers:</strong> When creating a website or digital environment that is to be interacted with, 
+                    some elements of the webpage are more important than others. Just like how a fire escape sign is meant to be visible during a fire, some elements of the webpage are designed to draw users to the option. Such elements such as color, design and placement can indicate how the user can interact with the element. An example is the hamburger side-bar menus where users can intuitively understand that they can get more menu options by selecting the option.</li>
+                <li><strong>Constraints:</strong> Constraints limit the range of possibilities for interaction. 
+                    Constraints are meant to help steer people away from certain actions that they are not authorized to take, 
+                    such as a lock on a door. A common constraint can be found when you are making an account. 
+                    Some websites limit how simple you can make your password in order to encourage better security for the end user.</li>
+                <li><strong>Affordances:</strong> Affordances are in contrast actions that you are allowed to take. 
+                    This tends to interact with signifiers by indicating what you can do in an environment. 
+                    For example, a door with a pull handle indicates that the door is able to be pulled open. 
+                    In a digital environment, things like links are underlined and colored blue to indicate they lead to another part of the internet.</li>
+                <li><strong>Systems Mapping:</strong> Creating a systems map allows you to get a starting point on how the different elements interact with each other. 
+                    With systems mapping, you can identify what gaps you have in your system before it becomes a problem later down the line.</li>
+            </ul>
+        </div>
+
+        <div id="content-architecture" class="tab-content">
+            <h2>Content and Information Architecture</h2>
+            <img src="Pictures/IA.png" alt="Range map of the nine-banded armadillo" class="image">
+            <ul>
+                <li><strong>Information Architecture:</strong> Information architecture is the backbone of the digital interface. 
+                    It visualizes the structure of the digital project to better make sense of how all the elements work with each other.</li>
+            </ul>
+        </div>
+
+        <div id="user-experience" class="tab-content">
+            <h2>User Experience and Visual Design</h2>
+            <img src="Pictures/UI.png" alt="Bad UI Drawing" class="image">
+            <ul>
+                <li><strong>UI and UX:</strong> User interface and User Experience are both important elements that makes up a digital environment. 
+                    Both create an experience that should measure up to the type of content that the designer intends.</li>
+                <li><strong>UI:</strong> UI or User Interface is the look or feel of the digital environment. This can be described as 
+                    the colors, shapes and placements of different elements. This is important as it determines the tone of the website. 
+                    A website that is meant to appeal to kids will be different than a website that is selling hyper cars.</li>
+                <li><strong>UX:</strong> UX or User Experience is how a website functions. This is the stuff that people interact outside of the design itself. 
+                    For example, the responsiveness and the structure of the website along with great products and a finely tuned 
+                    algorithm makes for a great user experience. </li>
+            </ul>
+        </div>
+
+        <div id="security-ethics" class="tab-content">
+            <h2>Security and Ethics</h2>
+            <img src="Pictures/Lock.png" alt="Lock" class="image" style="width: 40%; height: auto;">
+            <ul>
+                <li> <strong>Security</strong> Just like in real life, certain spaces need security to prevent unauthorized access 
+                    into aspects of the physical environment. You wouldn’t want just anyone to have access to the server room of a hospital for example.
+                     This is the same in the digital environment. Any website that has specific user logins and stores user data must have robust
+                      protections in place to prevent rouge access to the website. Social engineering attacks are the most common by far but other 
+                      attacks are common. </li>
+            </ul>
+        </div>
+        
+        <div id="priorities" class="tab-content">
+            <h2>Priorities</h2>
+            <img src="Pictures/Priorities.jpg" alt="Priorities" class="image">
+            <ul>
+                <li><strong>Top Priority:</strong>Cybersecurity and UI and UX design is the most important aspect to me. UI and UX is the main thing 
+                    that the general public will interact with. Understanding good UI and UX is a
+                     complicated field that can be a hit or miss. Understanding the ergonomics of how people 
+                     will interact with your device would probably take the most effort to implement and therefore
+                      require the most focus.
+                    Cybersecurity is important as it protects customer/client information. 
+                    Additionally it protects the reputation of the organization who runs the website. 
+                    Nobody would want to interact with a webstite that is known for shoddy security.  </s></li>
+                <li><strong>Important: </strong> Systems engineering and design and Content architecture are both important
+                     to the backbone of the website while their contributions are unkown to the general public, 
+                     they are nonetheless vital to the sucess to the end user product. By 
+                     visualizing your systems design and information architecture, you gain a better understanding of how your system is stuctured and what changes are needed. </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Final Project 2024. All rights reserved.</p>
+    </footer>
+    <script>
+        function openTab(tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            const tabs = document.querySelectorAll('.tab');
+            tabContents.forEach(content => content.classList.remove('active'));
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
